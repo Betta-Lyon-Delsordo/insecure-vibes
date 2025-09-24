@@ -1,2 +1,2 @@
-# insecure-vibes
-It’s Giving Insecure Vibes: Secure Coding Literacy for Vibe Coders
+# It’s Giving Insecure Vibes: Secure Coding Literacy for Vibe Coders
+Talk
