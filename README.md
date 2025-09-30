@@ -103,3 +103,5 @@ See slides for the snippets...
 
 ## 8) Questions?
 Feel free to follow up with the speaker on LinkedIn with any questions you have: https://www.linkedin.com/in/betta-lyon-delsordo/.
+
+You can also visit her website to reach out about speaking engagments, watch talk recordings, and learn more about becoming an ethical hacker: https://lyondelsordobetta.wixsite.com/betta. 
