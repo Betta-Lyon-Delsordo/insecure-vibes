@@ -13,7 +13,7 @@
 
 
 ## 1) Intro
-Betta Lyon Delsordo is a lead application penetration tester at OnDefend, and specializes in code review and AI hacking. She also builds tools to help her pentesting. You can connect with her on LinkedIn: https://www.linkedin.com/in/betta-lyon-delsordo/.
+Betta Lyon Delsordo is a penetration testing engineer at AWS, and specializes in code review and AI hacking. She also builds tools to help her pentesting. You can connect with her on LinkedIn: https://www.linkedin.com/in/betta-lyon-delsordo/.
 
 ## 2) Exploring vibe coding
 
