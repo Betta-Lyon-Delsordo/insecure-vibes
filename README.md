@@ -45,7 +45,7 @@ Bad vibes:
 
 
 ## 3) Common vulns in vibed code
-- Exposing sensitive information - hard coded API keys and creds
+- Exposing sensitive information - hard-coded API keys and creds
 - Insecure default passwords, unencrypted traffic, no auth checks
 - Detailed comments about exactly how to log in and exploit it
 - Displaying way too much information to public users
@@ -75,7 +75,7 @@ See slides for the snippets...
 - Prompt with emphasis on secure coding
 - Ask the AI to review its own code for security
 - Adversarial AI: ask another AI to find the vulnerabilities
-- Always ask for secure defaults, no hard coding creds, do user input sanitization, authorization checks
+- Always ask for secure defaults, no hard-coding creds, do user input sanitization, and authorization checks
 - Do a thorough review of the code, spend more time reviewing than you did coding!
 - Get help from someone who knows, and keep learning how to actually code
 - Don’t put things into production or accept sensitive data if you don’t know what you’re doing
@@ -88,7 +88,7 @@ See slides for the snippets...
 Offline AI:
 - Encourage team members to use offline or private AI solutions
 - Especially important with pentesting, national security, proprietary code, sensitive datasets
-- GPT4All is a great option: https://www.nomic.ai/gpt4all
+- GPT4All is a great option: [https://www.nomic.ai/gpt4all](https://www.nomic.ai/gpt4all)
 - Use with a model like Llama3, and turn off analytics and data lake on startup -> then fully private
 
 
@@ -105,7 +105,14 @@ Offline AI:
 ## 8) Workshop
 - See the workshop directory for the materials
 
+### Further Reading
+- [https://cloudsecurityalliance.org/blog/2025/04/09/secure-vibe-coding-guide](https://cloudsecurityalliance.org/blog/2025/04/09/secure-vibe-coding-guide)
+- [https://owasp.org/Top10/2025/](https://owasp.org/Top10/2025/)
+- [https://platform.claude.com/docs/en/agent-sdk/modifying-system-prompts](https://platform.claude.com/docs/en/agent-sdk/modifying-system-prompts)
+- [https://arxiv.org/abs/2512.03262](https://arxiv.org/abs/2512.03262)
+- [https://cheatsheetseries.owasp.org/index.html](https://cheatsheetseries.owasp.org/index.html)
+
 ## 9) Questions?
 Feel free to follow up with the speaker on LinkedIn with any questions you have: https://www.linkedin.com/in/betta-lyon-delsordo/.
 
-You can also visit her website to reach out about speaking engagments, watch talk recordings, and learn more about becoming an ethical hacker: https://lyondelsordobetta.wixsite.com/betta. 
+You can also visit her website to reach out about speaking engagements, watch talk recordings, and learn more about becoming an ethical hacker: https://lyondelsordobetta.wixsite.com/betta. 
