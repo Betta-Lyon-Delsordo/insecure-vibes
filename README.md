@@ -6,10 +6,11 @@
 2) Exploring vibe coding
 3) Common vulns in vibed code
 4) Recognizing AI generated code
-5) Resolving vulns
-6) AI-assisted coding
-7) Quiz time!
-8) Questions?
+5) Quiz time!
+6) Resolving vulns
+7) AI-assisted coding
+8) Workshop
+9) Questions?
 
 
 ## 1) Intro
