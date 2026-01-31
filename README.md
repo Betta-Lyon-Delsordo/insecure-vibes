@@ -66,10 +66,12 @@ Bad vibes:
 - Function stubs that don’t do anything
 - No attempt to integrate with existing environment
 
+## 5) Quiz time!
+See slides for the snippets... 
 
-
-## 5) Resolving vulns
-- Learn some basic application security: OWASP Top 10 is a great place to start
+## 6) Resolving vulns
+- Learn some basic application security: OWASP Top 10 is a great place to start: [https://owasp.org/Top10/2025/](https://owasp.org/Top10/2025/)]
+- OWASP Secure Coding Cheatsheets: [https://cheatsheetseries.owasp.org/index.html](https://cheatsheetseries.owasp.org/index.html)
 - Prompt with emphasis on secure coding
 - Ask the AI to review its own code for security
 - Adversarial AI: ask another AI to find the vulnerabilities
@@ -79,6 +81,8 @@ Bad vibes:
 - Don’t put things into production or accept sensitive data if you don’t know what you’re doing
 - Train junior members on the risks of AI coding and keep training them on real, manual coding
 - Make sure your team understands the risks of sharing code with public/online LLMs and train them to use private/local alternatives
+- Add an instruction file to your agent to ensure it considers security with each new task
+- Get familiar with code scanning tools like Semgrep: [https://github.com/semgrep/semgrep](https://github.com/semgrep/semgrep)
 
 
 Offline AI:
@@ -89,7 +93,7 @@ Offline AI:
 
 
 
-## 6) AI-assisted coding
+## 7) AI-assisted coding
 - Instead of having the AI write everything, use it as a companion to help you troubleshoot tough errors
 - Try to code out the entire application as you normally would manually, but then ask for help when you get tough errors or are exploring new tech stacks
 - Get help with troubleshooting and ask for secure architecture advice
@@ -98,10 +102,10 @@ Offline AI:
 - Use vibe coding for quick, internal scripts (like regex or awk/sed) and know when go manual for bigger projects
 
 
-## 7) Quiz time!
-See slides for the snippets... 
+## 8) Workshop
+- See the workshop directory for the materials
 
-## 8) Questions?
+## 9) Questions?
 Feel free to follow up with the speaker on LinkedIn with any questions you have: https://www.linkedin.com/in/betta-lyon-delsordo/.
 
 You can also visit her website to reach out about speaking engagments, watch talk recordings, and learn more about becoming an ethical hacker: https://lyondelsordobetta.wixsite.com/betta. 
