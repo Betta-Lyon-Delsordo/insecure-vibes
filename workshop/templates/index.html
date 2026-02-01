@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Insecure Vibes Demo</title>
+  </head>
+  <body style="background-color:powderblue;">
+    <h1>Welcome to Insecure Vibes</h1>
+    <p>Logged in as: <strong>{{ username or 'Guest' }}</strong></p>
+
+    <ul>
+      <li><a href="/initdb">Initialize demo database</a></li>
+      <li>
+        <form action="/search" method="get">
+          <label>Search users: <input type="text" name="q"></label>
+          <button type="submit">Search</button>
+        </form>
+      </li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <li><a href="/upload">Upload a file</a></li>
+      <!--Secret page is hidden so no one can get to it!-->
+      <!--<li><a href="/secret">Don't click this...</a></li>-->
+    </ul>
+  </body>
+</html>

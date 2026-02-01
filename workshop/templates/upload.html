@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Upload - Insecure Vibes</title>
+  </head>
+  <body style="background-color:powderblue;">
+    <h1>Upload a file</h1>
+    <!--Warning! This does not have any filtering mechanism for malicius files -->
+    <form method="post" enctype="multipart/form-data" action="/upload">
+      <input type="file" name="file" />
+      <button type="submit">Upload</button>
+    </form>
+    <p><a href="/">Back</a></p>
+  </body>
+</html>
