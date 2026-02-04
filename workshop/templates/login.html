@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Login - Insecure Vibes</title>
+    <!-- [OWASP A07:2021] Autocomplete deaktivieren für sensitive Felder -->
   </head>
   <body style="background-color:powderblue;">
     <h1>Login</h1>
     {% if error %}
       <p style="color:red">{{ error }}</p>
     {% endif %}
-    <form method="post" action="/login">
-      <label>Username: <input type="text" name="username"></label><br>
-      <label>Password: <input type="password" name="password"></label><br>
+    <form method="post" action="/login" autocomplete="off">
+      <!-- Kein CSRF-Token beim Login da noch keine Session existiert -->
+      <!-- autocomplete=off verhindert Browser-Caching von Credentials -->
+      <label>Username: <input type="text" name="username" autocomplete="off" maxlength="30" pattern="[a-zA-Z0-9_]{3,30}" required></label><br>
+      <label>Password: <input type="password" name="password" autocomplete="off" required></label><br>
       <button type="submit">Login</button>
     </form>
     <p><a href="/">Back</a></p>

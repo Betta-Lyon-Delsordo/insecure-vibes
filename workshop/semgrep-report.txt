@@ -1,0 +1,36 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 14 files tracked by git with 151 Code rules:
+  Scanning 4 files with 151 python rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 1 (1 blocking)
+ • Rules run: 151
+ • Targets scanned: 4
+ • Parsed lines: ~100.0%
+ • Scan was limited to files tracked by git
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Ran 151 rules on 4 files: 1 finding.
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+          
+    app.py
+    ❯❱ python.flask.security.audit.debug-enabled.debug-enabled
+          Detected Flask app with debug=True. Do not deploy to production with 
+          this flag enabled as it will leak sensitive information. Instead,    
+          consider using Flask configuration variables or setting 'debug' using
+          system environment variables.                                        
+          Details: https://sg.run/dKrd                                         
+                                                                               
+           83┆ app.run(debug=True)
+

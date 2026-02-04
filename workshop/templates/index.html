@@ -2,25 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Insecure Vibes Demo</title>
+    <title>Secure Vibes Demo</title>
   </head>
   <body style="background-color:powderblue;">
-    <h1>Welcome to Insecure Vibes</h1>
+    <h1>Welcome to Secure Vibes</h1>
+    <!-- Jinja2 escaped automatisch - XSS-Schutz -->
     <p>Logged in as: <strong>{{ username or 'Guest' }}</strong></p>
 
     <ul>
-      <li><a href="/initdb">Initialize demo database</a></li>
+      <!-- initdb nur für Admins sichtbar machen -->
+      {% if username == 'admin' %}
+      <li><a href="/initdb">Initialize demo database (Admin only)</a></li>
+      {% endif %}
       <li>
         <form action="/search" method="get">
-          <label>Search users: <input type="text" name="q"></label>
+          <!-- [Input-Validierung] maxlength clientseitig -->
+          <label>Search users: <input type="text" name="q" maxlength="50"></label>
           <button type="submit">Search</button>
         </form>
       </li>
+      {% if not username %}
       <li><a href="/login">Login</a></li>
-      <li><a href="/logout">Logout</a></li>
+      {% else %}
+      <!-- [OWASP A01:2021] Logout als POST mit CSRF-Token -->
+      <li>
+        <form action="/logout" method="post" style="display:inline;">
+          <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+          <button type="submit" style="background:none;border:none;color:blue;text-decoration:underline;cursor:pointer;">Logout</button>
+        </form>
+      </li>
+      {% endif %}
       <li><a href="/upload">Upload a file</a></li>
-      <!--Secret page is hidden so no one can get to it!-->
-      <!--<li><a href="/secret">Don't click this...</a></li>-->
+      <li><a href="/vibes">🎭 Vibe Checker</a></li>
+      <!-- Secret page erfordert jetzt Login -->
     </ul>
   </body>
 </html>
