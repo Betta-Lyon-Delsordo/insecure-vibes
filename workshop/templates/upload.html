@@ -2,13 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Upload - Insecure Vibes</title>
+    <title>Upload - Secure Vibes</title>
   </head>
   <body style="background-color:powderblue;">
     <h1>Upload a file</h1>
-    <!--Warning! This does not have any filtering mechanism for malicius files -->
+    <!-- [OWASP A04:2021] Nur erlaubte Dateitypen anzeigen -->
+    <p><strong>Erlaubte Dateitypen:</strong> txt, pdf, png, jpg, jpeg, gif (max 5MB)</p>
     <form method="post" enctype="multipart/form-data" action="/upload">
-      <input type="file" name="file" />
+      <!-- [OWASP A01:2021] CSRF-Token gegen Cross-Site Request Forgery -->
+      <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+      <!-- accept-Attribut als erste Verteidigungsschicht (clientseitig) -->
+      <input type="file" name="file" accept=".txt,.pdf,.png,.jpg,.jpeg,.gif" required />
       <button type="submit">Upload</button>
     </form>
     <p><a href="/">Back</a></p>

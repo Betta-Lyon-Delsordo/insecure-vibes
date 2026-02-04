@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Vibe Checker - Insecure Vibes</title>
+    <title>Vibe Checker - Secure Vibes</title>
     <style>
       .vibe-board { margin-top: 20px; }
       .vibe-entry { padding: 10px; margin: 5px 0; background: #f0f8ff; border-radius: 8px; }
@@ -27,7 +27,9 @@
 
     <h2>Set Your Vibe</h2>
     <form method="post">
-      <select name="vibe" style="font-size: 1.2em; padding: 10px;">
+      <!-- [OWASP A01:2021] CSRF-Token gegen Cross-Site Request Forgery -->
+      <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+      <select name="vibe" style="font-size: 1.2em; padding: 10px;" required>
         {% for vibe in allowed_vibes %}
         <option value="{{ vibe }}" {% if vibe == current_vibe %}selected{% endif %}>{{ vibe }}</option>
         {% endfor %}
@@ -40,6 +42,7 @@
       {% if all_vibes %}
       {% for entry in all_vibes %}
       <div class="vibe-entry">
+        <!-- Jinja2 escaped automatisch - XSS-Schutz -->
         <strong>{{ entry[0] }}</strong>: <span class="vibe-emoji">{{ entry[1] }}</span>
         <small>({{ entry[2] }})</small>
       </div>
