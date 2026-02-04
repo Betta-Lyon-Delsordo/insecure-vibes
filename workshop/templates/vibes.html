@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vibe Checker - Insecure Vibes</title>
+    <style>
+      .vibe-board { margin-top: 20px; }
+      .vibe-entry { padding: 10px; margin: 5px 0; background: #f0f8ff; border-radius: 8px; }
+      .vibe-emoji { font-size: 1.5em; }
+      .current-vibe { font-size: 2em; padding: 20px; background: #98fb98; border-radius: 10px; display: inline-block; }
+      .message { padding: 10px; background: #fffacd; border-radius: 5px; margin: 10px 0; }
+    </style>
+  </head>
+  <body style="background-color:powderblue;">
+    <h1>🎭 Vibe Checker</h1>
+    
+    {% if message %}
+    <div class="message">{{ message }}</div>
+    {% endif %}
+
+    <h2>Your Current Vibe</h2>
+    {% if current_vibe %}
+    <div class="current-vibe">{{ current_vibe }}</div>
+    {% else %}
+    <p>You haven't set a vibe yet! Choose one below.</p>
+    {% endif %}
+
+    <h2>Set Your Vibe</h2>
+    <form method="post">
+      <select name="vibe" style="font-size: 1.2em; padding: 10px;">
+        {% for vibe in allowed_vibes %}
+        <option value="{{ vibe }}" {% if vibe == current_vibe %}selected{% endif %}>{{ vibe }}</option>
+        {% endfor %}
+      </select>
+      <button type="submit" style="font-size: 1.2em; padding: 10px 20px;">Update Vibe!</button>
+    </form>
+
+    <div class="vibe-board">
+      <h2>🌍 Community Vibe Board</h2>
+      {% if all_vibes %}
+      {% for entry in all_vibes %}
+      <div class="vibe-entry">
+        <strong>{{ entry[0] }}</strong>: <span class="vibe-emoji">{{ entry[1] }}</span>
+        <small>({{ entry[2] }})</small>
+      </div>
+      {% endfor %}
+      {% else %}
+      <p>No vibes yet! Be the first to set one.</p>
+      {% endif %}
+    </div>
+
+    <p><a href="/">Back to Home</a></p>
+  </body>
+</html>
