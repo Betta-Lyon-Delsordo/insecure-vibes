@@ -112,6 +112,8 @@ Offline AI:
 - [https://platform.claude.com/docs/en/agent-sdk/modifying-system-prompts](https://platform.claude.com/docs/en/agent-sdk/modifying-system-prompts)
 - [https://arxiv.org/abs/2512.03262](https://arxiv.org/abs/2512.03262)
 - [https://cheatsheetseries.owasp.org/index.html](https://cheatsheetseries.owasp.org/index.html)
+- [https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys](https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys)
+- [https://snyk.io/blog/cursor-ide-malware-extension-compromise-in-usd500k-crypto-heist/](https://snyk.io/blog/cursor-ide-malware-extension-compromise-in-usd500k-crypto-heist/)
 
 ## 9) Questions?
 Feel free to follow up with the speaker on LinkedIn with any questions you have: https://www.linkedin.com/in/betta-lyon-delsordo/.
