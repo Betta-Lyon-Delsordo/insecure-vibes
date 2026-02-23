@@ -1,30 +1,26 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Search Results - Insecure Vibes</title>
-  </head>
-  <body style="background-color:powderblue;">
-    <h1>Search Results</h1>
-
+{% extends "base.html" %}
+{% block title %}Search Results — Insecure Vibes{% endblock %}
+{% block content %}
+  <div class="card p-3 bg-white">
+    <h1 class="h5">Search Results</h1>
     <p>Your query: <em>{{ query }}</em></p>
-
     {% if results %}
-    <table border="1">
-      <thead><tr><th>ID</th><th>Username</th></tr></thead>
-      <tbody>
-        {% for row in results %}
-        <tr>
-          <td>{{ row[0] }}</td>
-          <td>{{ row[1] }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+      <div class="table-responsive">
+        <table class="table table-sm table-bordered">
+          <thead><tr><th>ID</th><th>Username</th></tr></thead>
+          <tbody>
+            {% for row in results %}
+            <tr>
+              <td>{{ row[0] }}</td>
+              <td>{{ row[1] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
     {% else %}
-    <p>No results found.</p>
+      <p>No results found.</p>
     {% endif %}
-
-    <p><a href="/">Back</a></p>
-  </body>
-</html>
+    <a class="btn btn-link" href="/">Back</a>
+  </div>
+{% endblock %}

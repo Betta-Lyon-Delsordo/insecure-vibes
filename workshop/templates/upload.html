@@ -1,16 +1,16 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Upload - Insecure Vibes</title>
-  </head>
-  <body style="background-color:powderblue;">
-    <h1>Upload a file</h1>
-    <!--Warning! This does not have any filtering mechanism for malicius files -->
+{% extends "base.html" %}
+{% block title %}Upload — Insecure Vibes{% endblock %}
+{% block content %}
+  <div class="card p-4 bg-white">
+    <h1 class="h4 mb-3">Upload a file</h1>
+    <!--Warning! This does not have any filtering mechanism for malicious files -->
     <form method="post" enctype="multipart/form-data" action="/upload">
-      <input type="file" name="file" />
-      <button type="submit">Upload</button>
+      <div class="mb-3">
+        <label class="form-label">Choose file</label>
+        <input class="form-control" type="file" name="file" />
+      </div>
+      <button class="btn btn-primary" type="submit">Upload</button>
+      <a class="btn btn-link" href="/">Back</a>
     </form>
-    <p><a href="/">Back</a></p>
-  </body>
-</html>
+  </div>
+{% endblock %}

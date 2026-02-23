@@ -20,7 +20,7 @@ def index():
 @app.route('/initdb')
 def initdb():
     init_db()
-    # add a couple of demo users
+    # Add a couple of demo users to start quickly! 🚀🚀🚀
     add_user('alice', 'password123')
     add_user('bob', 'hunter2')
     return 'Database initialized with demo users.'

@@ -1,13 +1,11 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Logged out</title>
-    <meta http-equiv="refresh" content="3;url=/">
-  </head>
-  <body style="background-color:powderblue;">
-    <h1>You have been logged out</h1>
-    <!--Note: This login does not actually work, TODO: create real login-->
+{% extends "base.html" %}
+{% block head %}
+  <meta http-equiv="refresh" content="3;url=/">
+{% endblock %}
+{% block title %}Logged out — Insecure Vibes{% endblock %}
+{% block content %}
+  <div class="card p-4 bg-white">
+    <h1 class="h4">You have been logged out</h1>
     <p>Redirecting to <a href="/">home</a>…</p>
-  </body>
-</html>
+  </div>
+{% endblock %}
