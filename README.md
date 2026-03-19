@@ -84,6 +84,8 @@ See slides for the snippets...
 - Make sure your team understands the risks of sharing code with public/online LLMs and train them to use private/local alternatives
 - Add an instruction file to your agent to ensure it considers security with each new task
 - Get familiar with code scanning tools like Semgrep: [https://github.com/semgrep/semgrep](https://github.com/semgrep/semgrep)
+- Use MCP servers for security tools (like Semgrep): [https://semgrep.dev/docs/mcp](https://semgrep.dev/docs/mcp)
+- Add skills and plugins for secure code review (but always verify!)
 
 
 Offline AI:
@@ -114,6 +116,7 @@ Offline AI:
 - [https://cheatsheetseries.owasp.org/index.html](https://cheatsheetseries.owasp.org/index.html)
 - [https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys](https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys)
 - [https://snyk.io/blog/cursor-ide-malware-extension-compromise-in-usd500k-crypto-heist/](https://snyk.io/blog/cursor-ide-malware-extension-compromise-in-usd500k-crypto-heist/)
+- [https://semgrep.dev/docs/mcp](https://semgrep.dev/docs/mcp)
 
 ## 9) Questions?
 Feel free to follow up with the speaker on LinkedIn with any questions you have: https://www.linkedin.com/in/betta-lyon-delsordo/.
