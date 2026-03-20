@@ -24,6 +24,8 @@ http://127.0.0.1:5000
 And make sure to click the "Initialize demo database" to start the app working. 
 
 ## 3) Now run a Semgrep scan on the code
+
+### Option A: Old school scan via the CLI
 - Run Semgrep to look for any vulnerabilities in the code. Default rule options should be fine
 - https://github.com/semgrep/semgrep
 - Set up according to your system
@@ -31,6 +33,14 @@ And make sure to click the "Initialize demo database" to start the app working.
 - After it finishes, look through the output quickly to see what it found
 - Then use your AI to help you sort through the results and prioritize what to fix. Focus on critical and high severity issues, and make sure to ask it to consider if something is a false positive.
 
+### Option B: Use the Semgrep MCP
+- Follow the instructions here for your operating system and favorite AI: https://semgrep.dev/docs/mcp
+- More complex setups here, like if you want it to work with Docker: https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp. 
+- For example, you can do `python3 -m pip install semgrep`
+- For Claude Code, open the plugin browser (/plugin) and then set up the Semgrep plugin (/setup-semgrep-plugin)
+- Then just tell your AI to use Semgrep and help you interpret the results. 
+- Focus on critical and high severity issues, and make sure to ask it to consider if something is a false positive.
+- 
 ## 4) Ask the AI to help you fix the vulnerabilities
 - Semgrep is only going to find a few issues, others you can see by looking through the code (I left a few comments as hints). Ask the AI to perform a security review on the code and identify any issues it sees.
 - Based on anything you found, ask the AI to re-write those sections securely. Always make sure to double check with it that the issue is a true positive, and that the new solution is actually secure and that the code still runs
