@@ -1,0 +1,18 @@
+<div class="card p-4 bg-white">
+  <h1 class="h3">Welcome to Insecure Vibes</h1>
+  <p>Logged in as: <strong><%= typeof username !== 'undefined' ? username : 'Guest' %></strong></p>
+  <div class="mb-3">
+    <a class="btn btn-outline-secondary" href="/initdb">Initialize demo database</a>
+  </div>
+  <div class="mb-3">
+    <form action="/search" method="get" class="d-flex gap-2">
+      <input class="form-control" type="text" name="q" placeholder="Search users">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="d-flex gap-2">
+    <a class="btn btn-outline-primary" href="/login">Login</a>
+    <a class="btn btn-outline-secondary" href="/logout">Logout</a>
+    <a class="btn btn-outline-success" href="/upload">Upload a file</a>
+  </div>
+</div>

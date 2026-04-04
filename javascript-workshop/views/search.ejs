@@ -1,0 +1,22 @@
+<div class="card p-3 bg-white">
+  <h1 class="h5">Search Results</h1>
+  <p>Your query: <em><%= typeof query !== 'undefined' ? query : '' %></em></p>
+  <% if (results && results.length) { %>
+    <div class="table-responsive">
+      <table class="table table-sm table-bordered">
+        <thead><tr><th>ID</th><th>Username</th></tr></thead>
+        <tbody>
+          <% results.forEach(function(row){ %>
+            <tr>
+              <td><%= row[0] %></td>
+              <td><%= row[1] %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } else { %>
+    <p>No results found.</p>
+  <% } %>
+  <a class="btn btn-link" href="/">Back</a>
+</div>

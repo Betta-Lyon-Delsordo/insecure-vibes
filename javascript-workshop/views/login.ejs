@@ -1,0 +1,18 @@
+<div class="card p-4 bg-white">
+  <h1 class="h4 mb-3">Login</h1>
+  <% if (typeof error !== 'undefined' && error) { %>
+    <div class="alert alert-danger"><%= error %></div>
+  <% } %>
+  <form method="post" action="/login">
+    <div class="mb-3">
+      <label class="form-label">Username</label>
+      <input class="form-control" type="text" name="username">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input class="form-control" type="password" name="password">
+    </div>
+    <button class="btn btn-primary" type="submit">Login</button>
+    <a class="btn btn-link" href="/">Back</a>
+  </form>
+</div>

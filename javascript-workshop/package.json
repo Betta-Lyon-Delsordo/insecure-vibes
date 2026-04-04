@@ -1,0 +1,17 @@
+{
+  "name": "javascript-workshop",
+  "version": "0.0.1",
+  "description": "Insecure Vibes - JavaScript workshop conversion (intentionally insecure)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.22.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.19.0",
+    "multer": "^1.4.4",
+    "sqlite3": "^5.1.7"
+  }
+}

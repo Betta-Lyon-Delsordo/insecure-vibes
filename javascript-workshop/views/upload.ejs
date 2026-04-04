@@ -1,0 +1,12 @@
+<div class="card p-4 bg-white">
+  <h1 class="h4 mb-3">Upload a file</h1>
+  <!--Warning! This does not have any filtering mechanism for malicious files -->
+  <form method="post" enctype="multipart/form-data" action="/upload">
+    <div class="mb-3">
+      <label class="form-label">Choose file</label>
+      <input class="form-control" type="file" name="file" />
+    </div>
+    <button class="btn btn-primary" type="submit">Upload</button>
+    <a class="btn btn-link" href="/">Back</a>
+  </form>
+</div>
