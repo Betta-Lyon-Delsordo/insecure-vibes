@@ -124,3 +124,5 @@ Offline AI:
 Feel free to follow up with the speaker on LinkedIn with any questions you have: https://www.linkedin.com/in/betta-lyon-delsordo/.
 
 You can also visit her website to reach out about speaking engagements, watch talk recordings, and learn more about becoming an ethical hacker: https://lyondelsordobetta.wixsite.com/betta. 
+
+Recording of this talk for the OWASP 25th Anniversary Conference: https://www.youtube.com/watch?v=h043nFYrGyA
