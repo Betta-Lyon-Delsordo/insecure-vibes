@@ -55,6 +55,6 @@ And make sure to click the "Initialize demo database" to start the app working.
 ## 6) Finally, submit your code to see how secure it is!
 - Push your code up to a new repo so it's visible under your own Github.com (ask the AI if you aren't too familiar with how Git works)
 - Then, submit the public URL to this form so we can take a look:
-- https://app.sli.do/event/qm7gBKF33wmXjEZkf4NAjh
+- h[ttps://app.sli.do/event/qm7gBKF33wmXjEZkf4NAjh](https://app.sli.do/event/qm7gBKF33wmXjEZkf4NAjh)
 - We will go through it together on the big screen, and you can also try to look at someone else's code to check for vulnerabilities
 
