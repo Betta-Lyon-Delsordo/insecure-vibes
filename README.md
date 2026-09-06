@@ -119,6 +119,7 @@ Offline AI:
 - [https://semgrep.dev/docs/mcp](https://semgrep.dev/docs/mcp)
 - [https://github.com/anthropics/claude-code-security-review](https://github.com/anthropics/claude-code-security-review)
 - [https://composio.dev/content/claude-code-plugin](https://composio.dev/content/claude-code-plugin)
+- [https://opensourcemalware.com/blog/windows-infostealer-stubmaker-npm-ruby](https://opensourcemalware.com/blog/windows-infostealer-stubmaker-npm-ruby)
 
 ## 9) Questions?
 Feel free to follow up with the speaker on LinkedIn with any questions you have: https://www.linkedin.com/in/betta-lyon-delsordo/.
